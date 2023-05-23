@@ -19,6 +19,7 @@ const int EMPTY = 0;
 const int KYU = 9;
 std::array<int, 9> integers{1, 2, 3, 4, 5, 6, 7, 8, 9};
 int solutionCount = 1;
+int difficulty = 20;
 
 void setCursorPosition(int x, int y)
 {
@@ -235,7 +236,7 @@ int main() {
 	int board[KYU][KYU];
 	int solutionBoard[KYU][KYU];
 	cout << "Can start properly" << endl;
-	generateBoard(board, 3);
+	generateBoard(board, difficulty);
 	cout << "Board generated" << endl;
 	copyBoard(board, solutionBoard);
 	cout << "Board copied" << endl;
